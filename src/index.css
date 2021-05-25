@@ -1,13 +1,28 @@
+@font-face {
+  font-family: "Caxton";
+  src: url(./fonts/Caxton\ Bold.otf);
+}
+@font-face {
+  font-family: "Neue55";
+  src: url(./fonts/NHaasGroteskTXPro-55Rg.ttf);
+}
+@font-face {
+  font-family: "Neue65";
+  src: local("Neue65"),
+    url(./fonts/NHaasGroteskTXPro-65Md.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Neue75";
+  src: url(./fonts/NHaasGroteskTXPro-75Bd.ttf);
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #121212;
+  color: #b798c1;
+  font-family: "Neue55", serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+li {
+  list-style: none;
+  text-transform: uppercase;
 }

@@ -1,0 +1,50 @@
+.basement {
+  background-image: url("./../../image/man5.png");
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  margin: 4rem 1rem;
+  background-blend-mode: darken;
+  font-family: "Caxton", serif;
+  text-transform: capitalize;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+.basement-header {
+  font-size: 3rem;
+  margin: 0;
+  line-height: 40px;
+}
+
+@media only screen and (min-width: 600px) {
+  .basement-header {
+    font-size: 6rem;
+    margin: 0;
+    line-height: 60px;
+  }
+  .basement-img img {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .basement-header {
+    font-size: 7rem;
+    margin: 0;
+    line-height: 70px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .basement-header {
+    font-size: 8rem;
+    margin: 0;
+    line-height: 80px;
+  }
+  .basement {
+    height: 40vh;
+  }
+}
