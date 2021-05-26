@@ -38,7 +38,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="album">
-        <li className="item item2 ">get the album</li>
+        <li className="item2 ">get the album</li>
         <img src={appleLogo} width="24px" alt="logo" />
       </div>
     </header>

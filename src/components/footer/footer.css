@@ -24,13 +24,38 @@
 } */
 
 .social-box {
+  cursor: pointer;
   border: 1px solid #b798c1;
   padding: 0.75rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
+.social-box:hover {
+  color: #121212;
+}
+.social-box::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0);
+  transform-origin: center;
+  transition: transform 250ms ease-in;
+}
+.social-box:hover::after {
+  background: #b798c1;
+  transform: scale(1);
+}
+
 .social-box + .social-box {
   margin-left: 1rem;
 }
