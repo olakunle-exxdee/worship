@@ -35,7 +35,7 @@ function App() {
         y: 200,
         duration: 0.5,
       });
-  }, []);
+  }, [tl]);
 
   useEffect(() => {
     const element = appRef.current;
@@ -45,7 +45,7 @@ function App() {
       duration: 2,
       stagger: 0.4,
     });
-  }, []);
+  }, [tl]);
 
   return (
     <div className="app" ref={appRef}>
